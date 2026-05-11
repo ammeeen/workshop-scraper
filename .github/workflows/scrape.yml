@@ -17,4 +17,7 @@ jobs:
       - env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+          ALERT_PASSWORD: ${{ secrets.ALERT_PASSWORD }}
+
         run: python scrape.py
